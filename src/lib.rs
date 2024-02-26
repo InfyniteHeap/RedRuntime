@@ -3,10 +3,9 @@ pub mod redstone_component;
 mod runtime;
 pub mod unified_block;
 
-pub use redstone_component::RedstoneComponent;
 pub use unified_block::UnifiedBlock;
 
-pub fn sort_blocks<B: RedstoneComponent>(blocks: Vec<B>, enable_multi_threading: bool) {
+pub fn sort_blocks(blocks: Vec<UnifiedBlock>, enable_multi_threading: bool) {
     if enable_multi_threading {
         for _ in 1..=num_cpus::get() {
             std::thread::spawn(|| {});
