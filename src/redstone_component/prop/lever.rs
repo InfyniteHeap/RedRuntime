@@ -1,9 +1,7 @@
 use super::*;
 
-#[derive(Default)]
-pub enum LeverFace {
+pub(crate) enum LeverFace {
     Floor,
-    #[default]
     Wall,
     Ceiling,
 }

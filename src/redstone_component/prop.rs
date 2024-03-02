@@ -1,10 +1,10 @@
-pub mod button;
-pub mod comparator;
-pub mod container;
-pub mod lever;
-pub mod powered_block;
-pub mod repeater;
-pub mod wire;
+pub(crate) mod button;
+pub(crate) mod comparator;
+pub(crate) mod container;
+pub(crate) mod lever;
+pub(crate) mod powered_block;
+pub(crate) mod repeater;
+pub(crate) mod wire;
 
 #[derive(Default)]
 pub enum BlockDirection {
@@ -13,11 +13,4 @@ pub enum BlockDirection {
     South,
     West,
     East,
-}
-
-#[derive(Default)]
-pub struct BlockPos {
-    pub x: i32,
-    pub y: i32,
-    pub z: i32,
 }

@@ -1,2 +1,2 @@
-pub mod chest;
-pub mod furnance;
+mod chest;
+mod furnance;
